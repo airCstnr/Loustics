@@ -1,21 +1,21 @@
 package aircstnr.loustics;
 
+import com.orm.SugarRecord;
 
-public class Utilisateur {
+public class Utilisateur extends SugarRecord {
 
-    private int val = 4; // test pour git
     private String prenom;
     private String nom;
     // ajouter un membre "avatar" de type image
 
 
     public Utilisateur(String prenom, String nom) {
-        this.prenom = prenom;
-        this.nom = nom;
+        setPrenom(prenom);
+        setNom(nom);
     }
 
+    // constructeur vide pour SugarORM
     public Utilisateur() {
-        // constructeur vide, l'utilisateur peut ne pas être défini ATTENTION
     }
 
     public String getPrenom() {
