@@ -12,6 +12,7 @@ import java.util.List;
 public class Connexion extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
+    List<Utilisateur> utilisateurs;
 
 
     @Override
@@ -20,13 +21,13 @@ public class Connexion extends AppCompatActivity implements AdapterView.OnItemCl
         setContentView(R.layout.activity_connexion);
 
         // récupération de la liste des utilisateurs
-        final List<Utilisateur> utilisateurs = UtilisateurDAO.selectAll();
+        utilisateurs = UtilisateurDAO.selectAll();
 
         // objet graphique listView
         listView = (ListView) findViewById(R.id.listViewUtilisateurs);
 
         // création d'un adapter pour la liste des utilisateurs
-        ArrayAdapter<Utilisateur> adapter = new ArrayAdapter<Utilisateur>(this, android.R.layout.simple_list_item_1, utilisateurs);
+        ArrayAdapter<Utilisateur> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, utilisateurs);
 
         // attribution de l'adapter à la listView
         listView.setAdapter(adapter);
@@ -38,6 +39,6 @@ public class Connexion extends AppCompatActivity implements AdapterView.OnItemCl
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //System.out.println(view);
+        System.out.println(utilisateurs.get(position).toString());
     }
 }
