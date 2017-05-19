@@ -16,13 +16,13 @@
             android:value="utilisateurs.db" />
         <meta-data
             android:name="VERSION"
-            android:value="2" />
+            android:value="0" />
         <meta-data
             android:name="QUERY_LOG"
             android:value="true" />
         <meta-data
             android:name="DOMAIN_PACKAGE_NAME"
-            android:value="aircstnr.loustics.data" />
+            android:value="aircstnr.loustics" />
 
 
         <activity android:name=".Accueil" >
