@@ -24,7 +24,6 @@ public class Inscription extends AppCompatActivity {
 
         Toast.makeText(this, "Prénom : " + nouveau.getPrenom() + "\tNom : " + nouveau.getNom(), Toast.LENGTH_SHORT).show();
 
-        System.out.println("chaton");
         nouveau.save();
 
         Toast.makeText(this, "Inscription validée", Toast.LENGTH_SHORT).show();

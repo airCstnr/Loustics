@@ -31,7 +31,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dupont"
+            android:hint="Dupont"
             android:id="@+id/edit_nom"/>
 
     </LinearLayout>
@@ -48,7 +48,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pierre"
+            android:hint="Pierre"
             android:id="@+id/edit_prenom"/>
 
     </LinearLayout>
