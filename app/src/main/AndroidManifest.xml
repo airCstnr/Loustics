@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="aircstnr.loustics" >
+    package="aircstnr.loustics">
 
     <application
         android:name="com.orm.SugarApp"
@@ -8,7 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <!-- SUGARORM -->
         <meta-data
@@ -24,8 +24,7 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="aircstnr.loustics" />
 
-
-        <activity android:name=".Accueil" >
+        <activity android:name=".Accueil">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +32,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Inscription" />
-        <activity android:name=".Connexion"></activity>
+        <activity android:name=".Connexion" />
+        <activity android:name=".ChoixExercice"></activity>
     </application>
 
 </manifest>
