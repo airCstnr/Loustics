@@ -22,11 +22,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Culture Générale"/>
+        android:text="Culture Générale"
+        android:id="@+id/choix_exercice_cg"
+        android:onClick="onChoixCG"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mathématiques"/>
+        android:text="Mathématiques"
+        android:id="@+id/choix_exercice_maths"
+        android:onClick="onChoixMaths" />
 
 </LinearLayout>

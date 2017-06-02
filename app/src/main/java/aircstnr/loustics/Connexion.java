@@ -1,5 +1,6 @@
 package aircstnr.loustics;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -18,6 +20,7 @@ public class Connexion extends AppCompatActivity implements AdapterView.OnItemCl
 
     private ListView listView;
     List<Utilisateur> utilisateurs;
+    public Utilisateur utilisateurCourant;
 
 
     @Override
@@ -73,6 +76,15 @@ public class Connexion extends AppCompatActivity implements AdapterView.OnItemCl
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        System.out.println(utilisateurs.get(position).toString());
+        utilisateurCourant = utilisateurs.get(position);
+
+        Intent intent = new Intent(this, ChoixExercice.class);
+
+        startActivity(intent);
     }
+
+    public void onConnexionAnonyme(View view) {
+        Toast.makeText(this, "Connexion anaonyme pas encore disponible!!", Toast.LENGTH_LONG).show();
+    }
+
 }
