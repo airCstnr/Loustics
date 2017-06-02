@@ -14,11 +14,11 @@ public class ChoixExercice extends AppCompatActivity {
     }
 
     public void onChoixCG(View view) {
-        Toast.makeText(this, "Culture Générale", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Culture Générale", Toast.LENGTH_SHORT).show();
     }
 
     public void onChoixMaths(View view) {
-        Toast.makeText(this, "Mathématiques", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Mathématiques", Toast.LENGTH_SHORT).show();
     }
 
 
