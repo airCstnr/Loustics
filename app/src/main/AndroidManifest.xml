@@ -33,7 +33,10 @@
         </activity>
         <activity android:name=".Inscription" />
         <activity android:name=".Connexion" />
-        <activity android:name=".ChoixExercice"></activity>
+        <activity android:name=".ChoixExercice" />
+        <activity android:name=".MathsMultiplication" />
+        <activity android:name=".MathsAddition" />
+        <activity android:name=".CultureGQuestions"></activity>
     </application>
 
 </manifest>
